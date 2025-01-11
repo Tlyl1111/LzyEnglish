@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Teal Colors -->
+    <color name="color_teal_100">#CDF0ED</color>
+    <color name="color_teal_200">#9BE2DB</color>
+    <color name="color_teal_300">#6AD3CA</color>
+    <color name="color_teal_400">#38C5B8</color>
+    <color name="color_teal_500">#06B6A6</color>
+
+    <!-- Peach Colors -->
+    <color name="color_peach_100">#FEE9DF</color>
+    <color name="color_peach_200">#FDD3BE</color>
+    <color name="color_peach_300">#FBBE9E</color>
+    <color name="color_peach_400">#FAA87D</color>
+    <color name="color_peach_500">#F9925D</color>
+
+    <!-- Neutral and Accent Colors -->
+    <color name="color_background">#F7F7F7</color>
+    <color name="color_success">#12B76A</color>
+    <color name="color_error">#F04438</color>
+    <color name="color_warning">#F79009</color>
+
+    <!-- Gray Shades -->
+    <color name="color_gray_100">#E6E7EA</color>
+    <color name="color_gray_200">#D9DAE0</color>
+    <color name="color_gray_300">#B0B3BF</color>
+
+    <!-- Navy Shades -->
+    <color name="color_navy_100">#000B2F</color>
+    <color name="color_navy_200">#000A2A</color>
+    <color name="color_navy_300">#000926</color>
+</resources>

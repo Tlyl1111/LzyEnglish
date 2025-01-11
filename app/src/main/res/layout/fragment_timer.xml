@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Icon"
+            android:layout_marginEnd="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar_style"
+            android:backgroundTint="@color/color_gray_300" />
+
+        <!-- Treasure Icon -->
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_treasure"
+            android:contentDescription="Treasure Icon"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phát âm"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_navy_100"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Mascot Image -->
+    <ImageView
+        android:id="@+id/ic_mascot_scarf"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_mascot_scarf"
+        android:contentDescription="Mascot Image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Word Display -->
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cross-country skiing"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_navy_100"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ic_mascot_scarf"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Waveform -->
+    <ImageView
+        android:id="@+id/ic_waveform"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_waveform"
+        android:contentDescription="Waveform"
+        android:layout_below="@+id/tv_word"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Microphone Button -->
+    <LinearLayout
+        android:id="@+id/microphone_button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/icon_background_teal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/ic_waveform"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_microphone"
+            android:contentDescription="Microphone Icon" />
+    </LinearLayout>
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_teal_400"
+        android:text="Kiểm tra"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/microphone_button"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bottom Navigation -->
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/color_teal_500" android:state_checked="true" /> <!-- Màu xanh đậm khi được chọn -->
+    <item android:color="@color/color_navy_200" android:state_checked="false" /> <!-- Màu navy khi không được chọn -->
+</selector>

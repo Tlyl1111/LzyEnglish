@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Icon"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar_style"
+            android:backgroundTint="@color/color_gray_300" />
+
+        <!-- Treasure Icon -->
+        <ImageView
+            android:id="@+id/ic_treasure"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_treasure"
+            android:contentDescription="Treasure Icon"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sắp xếp thứ tự câu"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_navy_100"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Sun Image -->
+    <ImageView
+        android:id="@+id/sun_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_sun"
+        android:contentDescription="Sun Icon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Lines -->
+    <LinearLayout
+        android:id="@+id/input_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/sun_image"
+        android:layout_marginBottom="16dp">
+
+        <!-- Line 1 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_gray_300"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Line 2 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_gray_300" />
+    </LinearLayout>
+
+    <!-- Word Bank -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/word_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_area"
+        android:padding="8dp" >
+
+        <!-- Words -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enjoy"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/word_background"
+            android:textColor="@color/color_teal_400"
+            android:textSize="14sp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="she"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:background="@drawable/word_background"
+            android:textColor="@color/color_teal_400"
+            android:textSize="14sp"
+            android:layout_margin="8dp" />
+
+        <!-- Add more words here -->
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kiểm tra"
+        android:backgroundTint="@color/color_teal_400"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/word_bank"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

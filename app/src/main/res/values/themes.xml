@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LzyEnglish" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/color_teal_500</item>
+        <item name="colorPrimaryVariant">@color/color_teal_400</item>
+        <item name="colorSecondary">@color/color_peach_500</item>
+        <item name="colorSecondaryVariant">@color/color_peach_400</item>
+
+        <!-- Background and Surface -->
+        <item name="colorSurface">@color/color_gray_100</item>
+
+        <!-- Success, Warning, Error -->
+        <item name="colorError">@color/color_error</item>
+
+        <!-- Text Colors -->
+        <item name="colorOnPrimary">@color/color_background</item>
+        <item name="colorOnSecondary">@color/color_navy_200</item>
+        <item name="colorOnBackground">@color/color_navy_300</item>
+        <item name="colorOnSurface">@color/color_gray_300</item>
+
+        <item name="fontFamily">@font/outfit_regular</item>
+
+    </style>
+    <style name="Theme.MyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorControlHighlight">@android:color/transparent</item> <!-- Loại bỏ Ripple -->
+        <item name="android:stateListAnimator">@null</item> <!-- Vô hiệu hóa hiệu ứng Animator -->
+    </style>
+
+    <style name="Theme.LzyEnglish" parent="Base.Theme.LzyEnglish" />
+</resources>
